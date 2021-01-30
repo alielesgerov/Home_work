@@ -16,13 +16,19 @@ namespace Home_work
             this.X = X;
             this.Y = Y;
         }
+        public void Show()
+        {
+            Console.WriteLine($"Point X: {X}");
+            Console.WriteLine($"Point Y: {Y}");
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-
+            Point point = new Point(10, 20);
+            point.Show();
         }
     }
 }
