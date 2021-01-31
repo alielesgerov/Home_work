@@ -23,12 +23,49 @@ namespace Home_work
         }
     }
 
+    class Counter
+    {
+        int Min { set; get; }
+        int Max { set; get; }
+        int Current { set; get; }
+        public Counter(){}
+        public Counter(int Min,int Max)
+        {
+            this.Min = Min;
+            this.Max = Max;
+            this.Current = Min;
+        }
+       public void Increment()
+        {
+            if (Current < Max)
+                Current++;
+            else
+                Current = Min;
+        }
+       public void Decrement()
+        {
+            if (Current > Min)
+                Current--;
+        }
+        public void Show()
+        {
+            Console.Write($"{Current} ");
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            Point point = new Point(10, 20);
-            point.Show();
+            /*Point point = new Point(10, 20);
+            point.Show();*/
+
+            Counter counter = new Counter(10,20);
+            for (int i = 0; i < 40; i++)
+            {
+                counter.Increment();
+                counter.Show();
+            }
         }
     }
 }
