@@ -60,12 +60,14 @@ namespace Home_work
             /*Point point = new Point(10, 20);
             point.Show();*/
 
-            Counter counter = new Counter(10,20);
-            for (int i = 0; i < 40; i++)
-            {
-                counter.Increment();
-                counter.Show();
-            }
+            //Counter counter = new Counter(10,20);
+            //for (int i = 0; i < 40; i++)
+            //{
+            //    counter.Increment();
+            //    counter.Show();
+            //}
+
+
         }
-    }
+    }   
 }
